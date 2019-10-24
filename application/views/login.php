@@ -1,25 +1,25 @@
-<?php
-    include("Partials/head.php");
-?>
-
-<div class="container">
-    <div class="panel panel-default">
-        <form action="<?= base_url('login')?>" method="post">
-            <div class="col-md-4 col-md-offset-4 kotak">
-                <h3>Silahkan Login</h3>
-                <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                    <input type="text" class="form-control" placeholder="Email" name="email">
-                </div>
-                <div class="input-group">
-                    <span class="input-group-adddon"><span class="glyphicon glyphicon-lock"></span></span>
-                    <input type="password" class="form-control" placeholder="Password" name="password">
-                </div>
-                <div class="input-group" >
-                    <input type="submit" class="btn btn-primary" value="Login">
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-
+<!DOCTYPE html>
+<html>
+<!-- <head>
+	<title>Membuat Login Dengan CodeIgniter | www.malasngoding.com</title>
+</head> -->
+<body>
+	<!-- <h1>Membuat Login Dengan CodeIgniter <br/> www.malasngoding.com</h1> -->
+	<form action="<?php echo base_url('login/aksi_login'); ?>" method="post">		
+		<table>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Login"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
